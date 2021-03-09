@@ -1,0 +1,41 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "serverName": {
+      "value": "eus-gn-sql-dp"
+    },
+    "databaseNames": {
+      "value": [
+          "fishtalk",
+          "innovasea",
+          "maritech"
+      ]
+    },
+    "location": {
+      "value": "eastus"
+    },
+    "serverNameExternalid": {
+      "value": "/subscriptions/3070437b-e142-433a-a66c-8e528aa2088c/resourceGroups/eus-gn-rg-dataplatform/providers/Microsoft.Sql/servers/eus-gn-sql-dp"
+    },
+    "elasticPoolName": {
+      "value": "eus-gn-sqlpool-dp"
+    },
+    "administratorLogin": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/3070437b-e142-433a-a66c-8e528aa2088c/resourceGroups/eus-gn-shrd/providers/Microsoft.KeyVault/vaults/eus-gn-shrdkv-01"
+        },
+        "secretName": "sqluser"
+      }
+    },
+    "administratorLoginPassword": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/3070437b-e142-433a-a66c-8e528aa2088c/resourceGroups/eus-gn-shrd/providers/Microsoft.KeyVault/vaults/eus-gn-shrdkv-01"
+        },
+        "secretName": "sqlpassword"
+      }
+    }
+  }
+}
