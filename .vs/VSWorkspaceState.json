@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\nprod",
+    "\\nprod\\LogicApp",
+    "\\nprod\\ResourceGroup",
+    "\\nprod\\SQLServer"
   ],
   "SelectedNode": "\\test",
   "PreviewInSolutionExplorer": false
