@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "serverName": {
+      "value": "eus-gn-sql-dp"
+    },
+    "elasticPoolName": {
+      "value": "eus-gn-sqlpool-dp"
+    },
+    "skuName": {
+      "value": "StandardPool"
+    },
+    "tier": {
+      "value": "Standard"
+    },
+    "poolLimit": {
+      "value": "200"
+    },
+    "poolSize": {
+      "value": 107374182400
+    },
+    "perDatabasePerformanceMin": {
+      "value": "0"
+    },
+    "perDatabasePerformanceMax": {
+      "value": "200"
+    },
+    "zoneRedundant": {
+      "value": false
+    },
+    "licenseType": {
+      "value": "LicenseIncluded"
+    }
+  }
+}
